@@ -3,7 +3,7 @@ import BotList from './BotList';
 import BotDetails from './BotDetails';
 import BotArmy from './BotArmy';
 import SortBar from './SortBar';
-import './styles.css';
+import './index.css';
 
 const App = () => {
   const [bots] = useState([
@@ -1319,7 +1319,7 @@ const App = () => {
   };
 
   const handleEnlist = bot => {
-    console.log(${bot.name} enlisted!);
+    console.log('${bot.name} enlisted!');
   };
 
   const sortedBots = bots.sort((a, b) => {
